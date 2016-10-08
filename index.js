@@ -16,7 +16,7 @@ function createWindow () {
   mainWindow.loadURL('file://' + __dirname + '/index.html')
 
   // Открываем DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
   // Будет выполнено, когда пользователь закроет окно
   mainWindow.on('closed', function () {

@@ -13,7 +13,8 @@
     "height": 500
   },
   "license": "ISC",
-  "dependencies": {
-    
+  "dependencies": {},
+  "devDependencies": {
+    "electron-packager": "^8.1.0"
   }
 }
