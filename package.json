@@ -1,10 +1,11 @@
 {
-  "name": "hexapod.calc",
+  "name": "calc",
   "version": "1.0.0",
-  "description": "Hexapod Calc",
+  "description": "Hexapod Calc by Ihor Tkanka",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "build": "electron-packager . calc --ignore=node_modules,Resourses --asar --overwrite && cp Resourses/Calculator.icns calc-darwin-x64/calc.app/Contents/Resources/electron.icns"
   },
   "author": "Kayen",
   "window": {
@@ -15,6 +16,9 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "electron-packager": "^8.1.0"
+    "asar": "^0.12.3",
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0",
+    "electron-prebuilt": "^1.4.3"
   }
 }
