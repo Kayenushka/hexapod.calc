@@ -2,7 +2,7 @@
   "name": "hexapod.calc",
   "version": "1.0.0",
   "description": "Hexapod Calc",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

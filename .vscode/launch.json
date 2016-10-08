@@ -3,35 +3,29 @@
     "configurations": [
         {
             "name": "Launch",
-            "type": "node2",
+            "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/index.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
-            "preLaunchTask": null,
-            "runtimeExecutable": null,
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron",
             "runtimeArgs": [
-                "--nolazy"
+                ".",
+                "--enable-logging"
             ],
-            "env": {
-                "NODE_ENV": "development"
-            },
-            "console": "internalConsole",
+            "env": {},
+            //"externalConsole": false,
             "sourceMaps": false,
-            "outFiles": []
+            "outDir": null
         },
         {
             "name": "Attach",
-            "type": "node2",
+            "type": "node",
             "request": "attach",
-            "port": 9229,
-            "address": "localhost",
-            "restart": false,
+            "port": 5858,
             "sourceMaps": false,
-            "outFiles": [],
-            "localRoot": "${workspaceRoot}",
-            "remoteRoot": null
+            "outDir": null
         }
     ]
 }
